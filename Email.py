@@ -18,7 +18,7 @@ def SendMail():
     msg = EmailMessage()
     msg['Subject'] = 'System Surveillance Report'
     msg['From'] = EMAIL_ADDRESS
-    msg['To'] = 'testkey2024@gmail.com'
+    msg['To'] = 'receiver mail id here '
 
     msg.set_content('Report generated...')
     path = './screenshot/'
